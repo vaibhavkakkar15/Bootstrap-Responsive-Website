@@ -1,0 +1,447 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+#brand {
+  font-size: 30px;
+  color: goldenrod;
+  /* box-shadow: -2px 3px 10px 10px white; */
+  background: transparent;
+  border: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  /* border-radius: 50%; */
+}
+
+#contact-button {
+  background-color: goldenrod;
+  color: white;
+  border-radius: 550px;
+  box-shadow: 0px 19px 25px goldenrod;
+}
+
+i {
+  color: goldenrod;
+}
+
+#navbar-items li a {
+  color: white;
+  font-size: 22px;
+}
+
+.nav-button {
+  border-radius: 550px;
+  color: white;
+  box-shadow: 0px 19px 25px goldenrod;
+}
+
+#hover-effect:hover {
+  color: goldenrod;
+  background-color: white;
+}
+
+/* .nav-button:hover{
+  background-color: white;
+  color: goldenrod;
+} */
+
+#navbar-items li {
+  margin-left: 50px;
+  position: relative;
+}
+
+#navbar-items li a::after {
+  content: "";
+  height: 3px;
+  /* width: 100%; */
+  width: 0;
+  background: goldenrod;
+  position: absolute;
+  left: 0px;
+  bottom: -10px; /* bcoz we want to add space in bottom*/
+  transition: 0.5s;
+}
+
+#navbar-items li a:hover::after {
+  width: 100%;
+}
+
+#list-items {
+  margin-left: 20px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.content-text {
+  font-size: 100px;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#color {
+  color: goldenrod;
+}
+
+#lorem {
+  font-size: 18px;
+  text-align: justify;
+  color: grey;
+}
+
+#hacker-image {
+  border-radius: 50%;
+  box-shadow: 4px 10px 10px white;
+  max-height: 85%;
+}
+
+@media screen and (max-width: 794px) {
+  .content {
+    grid-template-columns: 100%;
+  }
+}
+
+/* .brand-icons {
+  display: grid;
+  grid-template-columns: 50% 50%;
+} */
+
+/* .icons {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+} */
+.icons div i {
+  font-size: 4.25rem;
+  margin-top: 30px;
+
+  /* grid-template-columns: 30% 30% 30%; */
+}
+
+.icons div i:hover {
+  font-size: 5.25rem;
+  border-radius: 50%;
+  box-shadow: 0px 3px 8px 8px goldenrod;
+}
+
+.curved {
+  background-color: orange;
+  color: #fff;
+  position: relative;
+  /* top: 550px; */
+  width: 100vw;
+  padding: 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.curved p {
+  /* margin-top: 33px; */
+  font-size: 23px;
+  background-color: orange;
+
+}
+
+.social{
+  background-color: orange;
+}
+.social i{
+  background-color: orange;
+  color: white;
+}
+
+.curved i {
+  margin: 13px;
+  cursor: pointer;
+  font-size: 33px;
+}
+
+.curved i:hover{
+  font-size: 3.5rem;
+}
+
+.curved-upper {
+  display: block;
+  width: 100vw;
+  position: relative;
+  /* top: 560px; */
+}
+
+
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.services #p1 {
+  font-size: 70px;
+  color: white;
+}
+
+.services #p2 {
+  font-size: 60px;
+  color: goldenrod;
+}
+
+.services #p3 {
+  font-size: 15px;
+  color: grey;
+}
+.service-content {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 50% 50%;
+}
+
+.text-size {
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+.second-section {
+  display: flex;
+}
+
+#cart1 {
+  position: relative;
+  left: 80px;
+  animation: right-out 2s linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+/* @keyframes right-out {
+  to {
+    transform: translateX(120px);
+  }
+} */
+
+.column-2 {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 50% 50%;
+  padding-left: 300px;
+}
+
+#cart2 {
+  position: relative;
+  animation: left-out 2s ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+/* @keyframes left-out {
+  to {
+    transform: translateX(-120px);
+  }
+} */
+
+#cart3 {
+  position: relative;
+  animation: left-out2 2s ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+/* @keyframes left-out2 {
+  to {
+    transform: translateX(-150px);
+  }
+} */
+
+.nav-button2 {
+  color: blue;
+  font-weight: 500;
+  box-shadow: 0px 4px 23px 10px blue;
+}
+
+.nav-button2:hover {
+  background-color: white;
+}
+
+.exp-section {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  padding-top: 320px;
+  /* padding-left: 80px; */
+}
+
+.exp {
+  display: flex;
+  /* height: 500px; */
+  width: 100%;
+  /* padding-left: 600px; */
+  /* padding-right: 400px;
+  padding-left: 200px; */
+  align-items: center;
+  /* margin-top: 15px; */
+  justify-content: space-around;
+}
+
+.c {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  color: goldenrod;
+  padding: 28px;
+  font-weight: 900;
+  font-size: 29px;
+  box-shadow: 0px 1px 24px 10px goldenrod;
+}
+.exp-content {
+  display: flex;
+  /* padding-right: 400px;
+  padding-left: 230px; */
+  align-items: center;
+  justify-content: space-around;
+  text-align: justify;
+}
+.exp-content .pa1 {
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  margin-left: 2px;
+}
+.exp-content .pa2 {
+  color: goldenrod;
+  font-weight: 700;
+  font-size: 25px;
+  margin-left: -18px;
+}
+
+.aim {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin-top: 170px;
+}
+
+.aim-text {
+  padding: 200px;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: grey;
+  line-height: 0.2rem;
+}
+.aim-image {
+  margin-top: 120px;
+  border-radius: 25%;
+  box-shadow: 0px 8px 8px 10px white;
+  margin-right: 61px;
+  max-height: 808px;
+  position: static;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.portfolios-card {
+  border-radius: 25px;
+  overflow: hidden;
+  border: 3px 0px 0px 3px green;
+  box-shadow: 2px green;
+}
+
+.card {
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+  border-radius: 25px;
+  border: 0;
+  margin-bottom: 1.5em;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+.experties {
+  margin-top: 200px;
+}
+
+.experties-text {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.touch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 120px;
+}
+
+.input-border {
+  border: 2px solid goldenrod;
+  border-radius: 10px;
+}
+
+.getInTouch {
+  padding: 200px;
+}
+.input-boxes {
+  margin-top: 200px;
+  overflow: hidden;
+}
+
+.send-btn {
+  margin: 25px 300px;
+}
+
+@media screen and (max-width: 837px) {
+  .services {
+    grid-template-columns: 100%;
+  }
+  .second-section {
+    flex-direction: column;
+  }
+  #cart1 {
+    animation: none;
+  }
+  #cart2 {
+    animation: none;
+  }
+  #cart3 {
+    animation: none;
+  }
+  .column-2 {
+    padding-left: 51px;
+    padding-top: 21px;
+  }
+
+  .exp-section {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .aim {
+    grid-template-columns: 100%;
+  }
+  .aim-text {
+    padding: 10px;
+  }
+  .aim-image img {
+    margin-top: 0px;
+  }
+
+  .touch {
+    grid-template-columns: 1fr;
+    border: none;
+  }
+
+  .input-boxes {
+    margin-top: 20px;
+  }
+
+  #cart1 {
+    left: 0px;
+  }
+}
